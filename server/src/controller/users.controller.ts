@@ -35,7 +35,7 @@ const signUp = async (req: Request, res: Response): Promise<void> => {
 
     const options = {
       httpOnly: true,
-      secure: true
+      secure: process.env.NODE_ENV === "production"
     };
 
     res
@@ -79,7 +79,7 @@ const signIn = async (req: Request, res: Response): Promise<void> => {
 
     const options = {
       httpOnly: true,
-      secure: true
+      secure: process.env.NODE_ENV === "production"
     };
 
     res
