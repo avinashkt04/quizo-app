@@ -24,7 +24,7 @@ Ensure you have the following installed:
    ```
 3. Create a `.env` file and add the following environment variables:
    ```env
-   DATABASE_URL=
+   DATABASE_URL=**your postgres url**
    NODE_ENV="development"
    CORS_ORIGIN=http://localhost:5173
    ```
